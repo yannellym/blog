@@ -59,10 +59,12 @@ posts.forEach(function(post) {
 let allTitles = _.lowerCase(post.title);
 
   if (allTitles === _.lowerCase([string=newRequest])) {
-    console.log("Match found!");
-}  else{
-  console.log("Not a match");
-}
+    res.render("post", {
+      title: post.title,
+      content: post.content
+    });
+} 
+
 });
 });
 
