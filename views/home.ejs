@@ -1,18 +1,35 @@
 <%- include partials/header.ejs %>
 
-<h1>Home</h1>
+<div class="container-flex">
+    <div class="container1">
+        <img class="yannelly" src="/images/yannelly.jpg" alt="">
+    </div>  
+    <div class="container2">
+        <h1><%= homeStartingContent %></h1>
+        <p> Hi, and welcome to my page. My name is Yannelly Mercado.
+            I created this blog with one purpose: to share my transition from
+            the education field to the tech field. A lot of hard work went into 
+            creating this blog. At first, it seemed a little bit crazy that I would even
+            try to create a project like this. Nonetheless, here it is! and it's working! 
+            (for now at least 	&#128517;).  Anyways, please look around, and I hope you like it! 
+        
+        </p>
+    </div>  
+</div>
   
- 
-  
 
-<p> <%= homeStartingContent %> </p>
-
-
-<% posts.forEach(function(post) { %>
-    <h1> <%= post.title  %> </h1>
-    <p> <%= post.post %> </p>
-
-    <%  }); %>
+<div class="imageContainer">
+    <div class="imageinContainer">
+        <img src="https://api.teach.org/sites/default/files/2021-08/Homepage_BAT6.png" alt="" srcset="">
+    </div>
+    <div class="imageinContainer arrow">
+        <img src="https://images.thdstatic.com/productImages/a810e8c9-9c40-44f9-a01c-eeaa5ac9c88d/svn/stencil-ease-commercial-stencils-cc0081m-64_600.jpg" alt="">
+    </div>
+    <div class="imageinContainer">
+        <img src="https://assets.thehansindia.com/h-upload/2021/07/31/1600x960_1092805-tech.jpg" alt="">
+    </div>
+</div>
 
 <%- include partials/footer.ejs %>
+
 
